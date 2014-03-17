@@ -1,7 +1,10 @@
 //Javascripts
 $(document).ready(function(){ 
-	$.favicon('favicon.ico');
+
+    //Favicon
+	$.favicon('img/favicon.ico');
 	
+    //Menu
 	menu.contactDetails({
 		phone: ['0471948576', '0471948576'], //optional, can have multiple values[array]
 		mobile: '0452857464', //optional, can have multiple values[array]
@@ -12,6 +15,7 @@ $(document).ready(function(){
 	//Slider
 	$('.camera_wrap').shuffleCamera();
     jQuery('.camera_wrap').camera({
+        random: true,
         playPause: false,
         pagination: false,
         loader: 'none',
