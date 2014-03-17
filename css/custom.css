@@ -60,6 +60,10 @@ a, a:hover {
 	left: /*0*/;
 }
 
+/* ie9 hack
+-----------------*/
+:root .gradient{filter:none \ ;}
+
 /* @media queries
 -----------------*/
 @media (min-width: 768px) {...}
