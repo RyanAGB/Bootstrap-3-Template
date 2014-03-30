@@ -3,6 +3,12 @@ $(document).ready(function(){
 
     //Favicon
 	$.favicon('img/favicon.ico');
+
+    //Content insert
+    //$('#view_section_1').insertAfter('#slider');
+
+    //Error insert
+    //$('#error').insertAfter('#slider');
 	
     //Menu
 	menu.contactDetails({
@@ -33,20 +39,9 @@ $(document).ready(function(){
      
 }); // end declaration
 
+$(window).load(function(){
 
-//$('#view_section_1').insertAfter('#slider');
-//$('#headerdiv').insertBefore.('#content');
-
- (function($){
-    $.fn.shuffleCamera = function() {
-        return this.each(function(){
-            var items = $(this).children().clone(true);
-            return (items.length) ? $(this).html($.shuffleCamera(items)) : this;
-        });
-    }
+    //Footer Map
+    //Main Map
     
-    $.shuffleCamera = function(arr) {
-        for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
-        return arr;
-    }
-})(jQuery);
+});
